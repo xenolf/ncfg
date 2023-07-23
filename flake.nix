@@ -10,7 +10,7 @@
     utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { nixpkgs, home-manager, rust-overlay, utils, ... }@inputs:
+  outputs = { nixpkgs, home-manager, utils, ... }@inputs:
   let 
     pkgsForSystem = system: import nixpkgs {
       overlays = [
