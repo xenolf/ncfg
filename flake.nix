@@ -45,6 +45,12 @@
           inherit inputs;
         };
       };
+      "azhwkd@havok" = mkHomeConfiguration {
+        modules = [ ./home-manager/havok.nix ];
+        extraSpecialArgs = {
+          inherit inputs;
+        };
+      };
     };
   };
 }
