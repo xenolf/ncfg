@@ -1,5 +1,5 @@
 {
-  description = "My fabolous config";
+  description = "My fabulous config";
 
   inputs = {
     # Nixpkgs
