@@ -48,6 +48,7 @@
   home.packages = with pkgs; [
     step-cli
     httpie
+    cachix
   ];
 
   # Nicely reload system units when changing configs
