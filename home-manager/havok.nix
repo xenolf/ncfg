@@ -46,6 +46,7 @@
   # home.packages = with pkgs; [ steam ];
 
   home.packages = with pkgs; [
+    step-cli
   ];
 
   # Nicely reload system units when changing configs

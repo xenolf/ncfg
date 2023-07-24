@@ -4,6 +4,8 @@
   # Enable home-manager and git
   home-manager.enable = true;
   git.enable = true;
+  htop.enable = true;
+  lazygit.enable = true;
   
   fish = {
     enable = true;
