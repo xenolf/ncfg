@@ -39,6 +39,9 @@
   home = {
     username = "azhwkd";
     homeDirectory = "/home/azhwkd";
+    sessionVariables = {
+      NIXPKGS_ALLOW_UNFREE = 1;
+    };
   };
 
   # Add stuff for your user as you see fit:
