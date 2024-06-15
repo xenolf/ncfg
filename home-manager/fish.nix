@@ -14,6 +14,31 @@
     fish_add_path $HOME/.dotnet/bin
   '';
 
+  shellAliases = {
+    # File System
+    ls = "eza -lh --group-directories-first --icons";
+    lsa = "ls -a";
+    lt = "eza --tree --level=2 --long --icons --git";
+    lta = "lt -a";
+    ff = "fzf --preview 'batcat --style=numbers --color=always {}'";
+
+    # Directories
+    ".." = "cd ..";
+    "..." = "cd ../..";
+    "...." = "cd ../../..";
+
+    # Tools
+    n = "nvim";
+    g = "git";
+    d = "docker";
+    bat = "batcat";
+
+    # Git
+    gcm = "git commit -m";
+    gcam = "git commit -a -m";
+    gcad = "git commit -a --amend";
+  };
+
   plugins = [
     {
       name = "nix-env.fish";
